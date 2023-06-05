@@ -14,3 +14,4 @@ script:
   - ./aws_credential.sh
   - npm run build
   - npm run deploy
+ 
