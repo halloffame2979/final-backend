@@ -28,7 +28,7 @@ provider:
     lambda: true
     apiGateway: true
   deploymentBucket:
-    name: deployment-sls-bucket
+    name: huyvq25-deployment-sls-final
 
   # Use these variables in the functions and resouorces section below. For example,
   # ${self:provider.environment.ATTACHMENT_S3_BUCKET}

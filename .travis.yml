@@ -1,0 +1,16 @@
+branches:
+  only:
+    - "master"
+
+language: node_js
+node_js:
+  - 16
+
+install: 
+  - npm install -g serverless
+  - npm install
+script: 
+  - chmod +x aws_credential.sh
+  - ./aws_credential.sh
+  - npm run build
+  - npm run deploy

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Serverless TODO image app",
   "scripts": {
-    "install-app": "tsc && sls deploy --verbose"
+    "build": "tsc",
+    "deploy": "tsc && sls deploy --verbose"
   },
   "dependencies": {
     "aws-xray-sdk": "^2.2.0",
@@ -29,7 +30,7 @@
     "serverless-reqvalidator-plugin": "^1.0.3",
     "serverless-webpack": "^5.2.0",
     "ts-loader": "^5.3.3",
-    "typescript": ">=3.8.0",
+    "typescript": "5.0.4",
     "webpack": "^4.29.6"
   },
   "author": "Ivan Mushketyk",
