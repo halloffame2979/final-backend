@@ -4,7 +4,7 @@
   "description": "Serverless TODO image app",
   "scripts": {
     "build": "tsc",
-    "deploy": "tsc && sls deploy --verbose"
+    "deploy": "sls deploy --verbose"
   },
   "dependencies": {
     "aws-xray-sdk": "^2.2.0",

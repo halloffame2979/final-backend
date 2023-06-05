@@ -5,14 +5,13 @@ branches:
 language: node_js
 node_js:
   - 16
-
-install: 
+before_install: 
+  - chmod +x aws_credential.sh
+  - ./aws_credential.sh
+install:
   - npm install -g serverless
   - npm install
-before_script: 
-  - chmod +x aws_credential.sh
 script: 
-  - ./aws_credential.sh
   - npm run build
   - npm run deploy
  
